@@ -32,10 +32,10 @@
 
                         string uploadedFileUrl = System.Text.Encoding.UTF8.GetString(responseBytes);
 
-                        Response.Write($"<br /><b>File Uploaded Successfully!</b><br />");
-                        Response.Write($"<a href='{uploadedFileUrl}' target='_blank'>Download File</a><br />");
-                        Response.Write($"<br /><b>PowerShell Command:</b><br />");
-                        Response.Write($"Invoke-WebRequest -Uri \"{uploadedFileUrl}\" -OutFile \"./{file.FileName}\"");
+                        Response.Write("<br /><b>File Uploaded Successfully!</b><br />");
+                        Response.Write("<a href='" + uploadedFileUrl + "' target='_blank'>Download File</a><br />");
+                        Response.Write("<br /><b>PowerShell Command:</b><br />");
+                        Response.Write("Invoke-WebRequest -Uri \"" + uploadedFileUrl + "\" -OutFile \"./" + file.FileName + "\"");
                     }
                 }
                 else 
